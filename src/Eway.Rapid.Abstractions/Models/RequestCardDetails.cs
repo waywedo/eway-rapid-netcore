@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Eway.Rapid.Abstractions.Models
+﻿namespace Eway.Rapid.Abstractions.Models
 {
     /// <summary>
     /// Credit Card Details for PCI compliant customers. When method is &#39;scheduled&#39; then either Credit Card or Bank Account Details must be provided but not both.

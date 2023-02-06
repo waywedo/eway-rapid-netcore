@@ -8,25 +8,19 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class RapidClientExtensions
     {
-
-        private const string RAPID_CONFIGURATION_SECTION_NAME = "RapidClient";
-
         /// <summary>
         /// Add Rapid
         /// </summary>
         /// <param name="services"></param>
-        /// <param name="configSectionPath"></param>
-        /// <returns></returns>
-        public static IHttpClientBuilder AddRapidClient(this IServiceCollection services, string configSectionPath = RAPID_CONFIGURATION_SECTION_NAME)
+        /// <param name="configureOptions"></param>
+        public static IHttpClientBuilder AddRapidClient(this IServiceCollection services, Action<RapidOptions> configureOptions)
         {
             if (services == null)
             {
                 throw new ArgumentNullException(nameof(services));
             }
-            services.AddOptions<RapidOptions>()
-                .BindConfiguration(configSectionPath)
-                .ValidateDataAnnotations();
 
+            services.AddOptions<RapidOptions>().Configure(configureOptions);
 
             return services.AddHttpClient<IRapidClient, RapidClient>()
                 .ConfigureHttpClient((sp, client) =>

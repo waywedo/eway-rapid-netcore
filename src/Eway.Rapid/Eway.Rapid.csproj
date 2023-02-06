@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageId>Eway.Rapid.Standard</PackageId>
+        <TargetFramework>net7.0</TargetFramework>
+        <PackageId>Eway.Rapid.NetCore</PackageId>
         <Authors>eWAY</Authors>
         <Description>
             A .NET standard library to integrate with Eway's Rapid Payment API.
@@ -23,8 +23,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-        <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
     </ItemGroup>
 
     <ItemGroup>

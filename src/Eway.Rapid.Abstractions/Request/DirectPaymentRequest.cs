@@ -29,7 +29,7 @@ namespace Eway.Rapid.Abstractions.Request
         public Payment Payment { get; set; }
         public virtual string RedirectUrl { get; set; }
         /// <summary>
-        /// IP of the Customer's system 
+        /// IP of the Customer's system
         /// </summary>
         public string CustomerIP { get; set; }
         public string DeviceID { get; set; }
@@ -58,7 +58,7 @@ namespace Eway.Rapid.Abstractions.Request
                     return SaveCustomer ? throw new NotSupportedException("Rapid doesn't support save customer for Authorise yet.") : Method.Authorise;
                 }
             }
-        } 
+        }
         [JsonIgnore]
         public bool SaveCustomer { get; set; }
         [JsonIgnore]

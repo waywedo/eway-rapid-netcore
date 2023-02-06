@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Eway.Rapid.IntegrationTests
 {
-    public class RapidClientFixture 
+    public class RapidClientFixture
     {
         public RapidClientFixture()
         {
@@ -13,7 +13,7 @@ namespace Eway.Rapid.IntegrationTests
                 .Build();
             var services = new ServiceCollection();
             services.AddSingleton<IConfiguration>(configuration);
-            services.AddRapidClient();
+            services.AddRapidClient(o => configuration.GetSection("RapidClient").Bind(o));
             var sp = services.BuildServiceProvider();
 
             RapidClient = sp.GetRequiredService<IRapidClient>();

@@ -1,5 +1,4 @@
 ﻿using System;
-using Eway.Rapid.Abstractions.Models;
 
 namespace Eway.Rapid.Abstractions.Request
 {

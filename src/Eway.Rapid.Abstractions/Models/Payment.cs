@@ -2,7 +2,7 @@
 {
     public class Payment
     {
-        /// <summary>The total amount to charge the card holder in this transaction</summary>        
+        /// <summary>The total amount to charge the card holder in this transaction</summary>
         public virtual int TotalAmount { get; set; }
 
         /// <summary>The merchant's invoice number</summary>

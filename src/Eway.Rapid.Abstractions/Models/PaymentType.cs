@@ -5,7 +5,7 @@
     /// The corresponding payment detail to this PaymentType must be provided.
     ///   CreditCard  -->  CardDetails
     ///   CardPresence --> PosDetails
-    ///   PayPal --> Customer.GlobalPayerId  must be Paypal token customer Id  
+    ///   PayPal --> Customer.GlobalPayerId  must be Paypal token customer Id
     ///   ClickToPay --> WalletDetails.Id
     ///   SecurePay  --> WalletDetails.Token
     ///   ApplePay  --> WalletDetails.Token

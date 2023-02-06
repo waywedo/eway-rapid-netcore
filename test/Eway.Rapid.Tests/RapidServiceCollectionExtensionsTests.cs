@@ -25,7 +25,7 @@ namespace Eway.Rapid.Tests
             var services = new ServiceCollection();
             services.AddSingleton<IConfiguration>(configuration);
             services.AddOptions();
-            services.AddRapidClient();
+            services.AddRapidClient(o => configuration.GetSection("RapidClient").Bind(o));
             var sp = services.BuildServiceProvider();
 
             //act

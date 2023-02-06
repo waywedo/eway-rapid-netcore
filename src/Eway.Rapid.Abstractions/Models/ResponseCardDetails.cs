@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Eway.Rapid.Abstractions.Models
+﻿namespace Eway.Rapid.Abstractions.Models
 {
     /// <summary>
     /// Masked Credit Card Details either supplied by the customer, or decrypted/supplied from a token source.

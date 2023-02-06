@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Eway.Rapid.Abstractions.Response
+﻿namespace Eway.Rapid.Abstractions.Response
 {
     /// <summary>
     /// The Bank Account details that were used for for PCI compliant customer. The Account number is masked and will only contain the last 4 digits.

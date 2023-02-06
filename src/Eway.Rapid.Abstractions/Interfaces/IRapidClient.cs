@@ -7,11 +7,11 @@ namespace Eway.Rapid.Abstractions.Interfaces
 {
     public interface IRapidClient
     {
-       
+
         Task<DirectPaymentResponse> CreateTransaction(DirectPaymentRequest request, CancellationToken cancellationToken = default);
 
         Task<CreateTransparentRedirectResponse> CreateTransaction(CreateTransparentRedirectRequest request, CancellationToken cancellationToken = default);
-       
+
         Task<CreateResponsiveSharedResponse> CreateTransaction(CreateResponsiveSharedRequest request, CancellationToken cancellationToken = default);
 
         Task<CancelAuthorisationResponse> CancelAuthorisation(CancelAuthorisationRequest request, CancellationToken cancellationToken = default);

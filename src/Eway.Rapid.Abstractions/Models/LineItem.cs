@@ -1,7 +1,4 @@
-﻿using System.ComponentModel;
-using System.Text.Json.Serialization;
-
-namespace Eway.Rapid.Abstractions.Models
+﻿namespace Eway.Rapid.Abstractions.Models
 {
 
     public class LineItem

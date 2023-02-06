@@ -26,7 +26,6 @@ namespace Eway.Rapid
             httpClient.DefaultRequestHeaders.Authorization = options.CreateBasicAuthHeader();
         }
 
-
         public static AuthenticationHeaderValue CreateBasicAuthHeader(this RapidOptions options)
         {
             if (options == null)
@@ -65,9 +64,7 @@ namespace Eway.Rapid
             {
                 url += "/";
             }
-            var uri = new Uri(url);
-
-            return uri;
+            return new Uri(url);
         }
     }
 }

@@ -1,10 +1,8 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Eway.Rapid.Abstractions.Models
+﻿namespace Eway.Rapid.Abstractions.Models
 {
     /// <summary>
     /// Common elements usable in every request processed through another gateway provider
-    /// </summary>    
+    /// </summary>
     public class BaseExternalDetails
     {
         /// <summary>
