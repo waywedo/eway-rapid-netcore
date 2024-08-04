@@ -4,6 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <PackageId>waywedo.Eway.Rapid.NetCore.Abstractions</PackageId>
         <Authors>eWAY</Authors>
+        <Version>1.1.0</Version>
         <Description>
             A .NET standard library to integrate with Eway's Rapid Payment API.
 
