@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
-        <PackageId>Eway.Rapid.NetCore</PackageId>
+        <TargetFramework>net8.0</TargetFramework>
+        <PackageId>waywedo.Eway.Rapid.NetCore</PackageId>
         <Authors>eWAY</Authors>
         <Description>
             A .NET standard library to integrate with Eway's Rapid Payment API.
@@ -17,13 +17,10 @@
         </Description>
         <RepositoryType>git</RepositoryType>
         <PackageProjectUrl>https://eway.io/api-v3/</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/eWAYPayment/eway-rapid-netstandard</RepositoryUrl>
+        <RepositoryUrl>https://github.com/waywedo/eway-rapid-netcore</RepositoryUrl>
         <PackageIcon>eway_32-32.png</PackageIcon>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     </PropertyGroup>
-
-    <ItemGroup>
-    </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Eway.Rapid.Abstractions\Eway.Rapid.Abstractions.csproj" />
@@ -38,6 +35,13 @@
             <Pack>True</Pack>
             <PackagePath></PackagePath>
         </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
     </ItemGroup>
 
 </Project>
